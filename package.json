@@ -1,0 +1,19 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto de node.js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://FacuVacani@bitbucket.org/FacuVacani/guia-hoteles.git"
+  },
+  "author": "Facundo Vacani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/FacuVacani/guia-hoteles/issues"
+  },
+  "homepage": "https://bitbucket.org/FacuVacani/guia-hoteles#readme"
+}
