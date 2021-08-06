@@ -49,3 +49,8 @@ address{
     width: 100%;
 
 }
+
+article{
+    font-size: 80%;
+    text-align: right;
+}
