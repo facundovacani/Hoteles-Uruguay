@@ -3,10 +3,10 @@
     padding: 4px;
     height: 200px;
     background: rgba(17, 35, 224, 0.568);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(17, 35, 224, 0.568) 100%);
-    background: -o-linear-gradient(top 0deg, rgba(255,255,255,1) 0%, rgba(17, 35, 224, 0.568) 100%);
-    background: -webkit-linear-gradient(top 0deg, rgba(255,255,255,1) 0%, rgba(17, 35, 224, 0.568) 100%);
-    background: -moz-linear-gradient(top 0deg, rgba(255,255,255,1) 0%, rgba(17, 35, 224, 0.568) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, #106cfc 100%);
+    background: -o-linear-gradient(top 0deg, rgba(255,255,255,1) 0%, #106cfc 100%);
+    background: -webkit-linear-gradient(top 0deg, rgba(255,255,255,1) 0%, #106cfc 100%);
+    background: -moz-linear-gradient(top 0deg, rgba(255,255,255,1) 0%, #106cfc 100%);
 
 }
 nav {
@@ -21,10 +21,10 @@ header > div > h1{
 .footer {
     height: 100%;
     padding: 10px 10px 0 10px;
-    background: linear-gradient(0deg, rgba(17, 35, 224, 0.568) 0%, rgba(255,255,255,1) 100%);
-    background: -webkit-linear-gradient(top 0deg, rgba(17, 35, 224, 0.568) 0%, rgba(255,255,255,1) 100%);
-    background: -o-linear-gradient(top 0deg, rgba(17, 35, 224, 0.568) 0%, rgba(255,255,255,1) 100%);
-    background: -moz-linear-gradient(top 0deg, rgba(17, 35, 224, 0.568) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, #106cfc 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top 0deg, #106cfc 0%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top 0deg, #106cfc 0%, rgba(255,255,255,1) 100%);
+    background: -moz-linear-gradient(top 0deg, #106cfc 0%, rgba(255,255,255,1) 100%);
     margin-bottom: 0px;
     color: rgb(37, 37, 37);
     letter-spacing:3px;
@@ -45,6 +45,7 @@ address{
     font-family: 'Courier New', Courier, monospace;
 }
 
+
 .cartaHotel{
     margin-top: 15px;
     flex: 1 150px; /*Esto lo que hace es. El primer valor que ponemos es de cuanto queremos que se agrande o se achique el elemento (al ponerle 1 es como poner lo normal del elemento, Si ponemos 2, crece el doble). Y en el segundo cuanto de ancho*/
@@ -59,4 +60,8 @@ address{
 article{
     font-size: 80%;
     text-align: right;
+}
+
+.footer-iconos{
+    padding-right: 10px;
 }
