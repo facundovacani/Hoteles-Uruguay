@@ -8,7 +8,8 @@
 
     <!-- Bootstrap CSS... Este es un link directo al servidor. Pero nosotros usaremos el archivo de bootstrap min de nuestro repositorio. -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.css">
     <!-- Con este ultimo link enlazamos nuestros iconos que hay en el node_modules. Descargados anteriormente en la consola. -->
@@ -79,16 +80,18 @@
         <section class="d-flex flex-wrap">
             <!-- Con d-flex flex-wrap hacemos que se "respete" el ancho del navegador. (horizontalmente.)-->
             <!-- la clase flex-row-reverse (ej: class="d-flex flex-wrap flex-row-reverse") lo que hará es invertir el orden de los elementos.-->
-            <div class="cartaHotel d-flex flex-column justify-content-between">
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2">
                 <!--la clase de bootstrap justify-content-between, hace que se separe el contenido, para no dejar un espacio en blanco donde no debería haberlo. Para poder alinearlo bien.-->
-                <div>
-                    <h3>Hotel Deseado</h3>
+                <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></div>
+                <img src="images/hotel.jpg" class="card-img-top" alt="hotel imagen">
+                <div class="card-body">
+                    
+                    <h5 class="card-title">Hotel Deseado</h5>
+                    <h6 class="card-subtitle">Rocha</h6><hr>
 
-                    <p>
-                        Hotel pegado a una de las playas más linda del país. Donde podrás acceder a distintos tipos de
-                        cabañas sobre el mar. Podrás hacer distintas actividades con nuestros profesionales que te
-                        guiarán
-                        en el buceo, navegación en barco a motor o a vela, el surf, y otros más.
+                    <p class="card-text">
+                        Hotel con cabañas sobre el mar, donde podras realizar distintas actividades. Entre ellas: buceo,
+                        navegación a vela, surf, y otros más.
                     </p>
                 </div>
                 <div>
@@ -98,15 +101,20 @@
 
 
             </div>
-            <div class="cartaHotel d-flex flex-column justify-content-between">
-                <div>
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2">
+                <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></div>
+                <img src="images/hotel.jpg" class="card-img-top" alt="hotel imagen">
+                <div class="card-body">
 
-                    <h3>Hotel Fit</h3>
-
-                    <p>
+                    <h5 class="card-title">Hotel Fit</h5>
+                    
+                    <h6 class="card-subtitle">Maldonado</h6>
+<hr>
+                    <p class="card-text">
                         Hotel con un polideportivo, en la que podrán acceder a tenis, futbol, basquetbol, natación, y
                         otros deportes.
                     </p>
+
                 </div>
                 <div>
                     <button class="btn btn-success reserva">Reservar</button>
@@ -114,28 +122,37 @@
                 </div>
 
             </div>
-            <div class="cartaHotel d-flex flex-column justify-content-between">
-                <div>
-                    <h3>Hotel Lujuria</h3>
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2">
+                <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></div>
 
-                    <p>
+                <img src="images/hotel.jpg" class="card-img-top" alt="hotel imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Lujuria</h5>
+                    
+                    <h6 class="card-subtitle">Montevideo</h6><hr>
+                    <p class="card-text">
                         Hotel de 15 pisos con piscina en la planta baja y en la planta más alta, cuenta también con
                         jacuzzis y restaurantes de lujos.
                     </p>
                 </div>
+
                 <div>
                     <button class="btn btn-success reserva">Reservar</button>
 
                 </div>
 
             </div>
-            <div class="cartaHotel d-flex flex-column justify-content-between">
-                <div>
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2">
+                <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span></span><span class="oi oi-star"></span><span class="oi oi-star"></span></div>
+                <img src="images/hotel.jpg" class="card-img-top" alt="hotel imagen">
+                <div class="card-body">
 
-                    <h3>Hotel Perlas</h3>
+                    <h5 class="card-title">Hotel Perlas</h5>
+                    
+                    <h6 class="card-subtitle">Rocha</h6>
+<hr>
+                    <p class="card-text">Ubicado en Barra de Valizas, aquí podrás disfrutar de los bosques, el oceano, el arroyo y la laguna más bellos de Rocha.</p>
 
-                    <p>Hotel ubicado en Barra de Valizas, Rocha, Uruguay. Aquí podrás disfrutar de la naturaleza del
-                        país. Tanto en los bosques, como el oceano, el arroyo o la laguna.</p>
                 </div>
                 <div>
                     <button class="btn btn-success reserva">Reservar</button>
@@ -144,37 +161,18 @@
 
             </div>
 
-            <div class="cartaHotel d-flex flex-column justify-content-between">
-                <div>
-                    <h3>Hotel Perla</h3>
 
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2">
+                <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></div>
+                <img src="images/hotel.jpg" class="card-img-top" alt="hotel imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Maldonado</h5>
+                    
+                    <h6 class="card-subtitle">Maldonado</h6>
+<hr>
 
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe cupiditate dicta inventore,
-                        corporis
-                        odio minus laudantium iste harum facilis sunt aspernatur, repellat, asperiores maiores officiis
-                        natus adipisci sit molestiae accusamus?
-                    </p>
-                </div>
-                <div>
-                    <button class="btn btn-success reserva">Reservar</button>
-
-                </div>
-
-
-            </div>
-
-            <div class="cartaHotel d-flex flex-column justify-content-between">
-                <div>
-                    <h3>Hotel Maldonado</h3>
-
-
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, vero. Quod ex nulla neque
-                        sint
-                        similique accusamus recusandae, tenetur repellendus deserunt iure cupiditate dicta, amet ut,
-                        vitae
-                        veritatis totam animi?
+                    <p class="card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, vero.
                     </p>
                 </div>
                 <div>
@@ -185,16 +183,17 @@
 
             </div>
 
-            <div class="cartaHotel d-flex flex-column justify-content-between">
-                <div>
-                    <h3>Hotel Gaucho</h3>
-
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure quasi, mollitia aut
-                        natus cupiditate reiciendis repudiandae, tempore possimus sint voluptate eum! Vitae ut eaque
-                        impedit
-                        cumque! Sed, provident maiores.
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2">
+                <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></div>
+                <img src="images/hotel.jpg" class="card-img-top" alt="hotel imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Gaucho</h5>
+                    
+                    <h6 class="card-subtitle">Paysandu</h6>
+                    
+<hr>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure quasi.
                     </p>
                 </div>
                 <div>
@@ -205,18 +204,18 @@
 
             </div>
 
-            <div class="cartaHotel d-flex flex-column justify-content-between">
-                <div>
-                    <h3>Hotel Costa Azul</h3>
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2">
+                <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></div>
+                <img src="images/hotel.jpg" class="card-img-top" alt="hotel imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Costa Azul</h5>
+                    
+                    <h6 class="card-subtitle">Rocha</h6>
+                    <hr>
 
-
-                    <p>
+                    <p class="card-text">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident sunt voluptatibus pariatur
-                        esse
-                        ipsum quas numquam harum fugit architecto, reprehenderit itaque eius exercitationem aperiam
-                        corrupti
-                        laborum, recusandae inventore distinctio aspernatur.
-                    </p>
+                        esse.</p>
                 </div>
                 <div>
                     <button class="btn btn-success reserva">Reservar</button>
@@ -233,6 +232,7 @@
 
         </section>
     </main>
+    <br>
     <footer class="footer">
         <div class="row">
 

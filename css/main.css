@@ -31,6 +31,7 @@ header > div > h1{
     margin-top: 20px;
     bottom: 0;
     width: 100%;
+    overflow:auto;
 }
 
 footer a {
@@ -49,19 +50,28 @@ address{
 
 
 .cartaHotel{
-    margin-top: 15px;
-    flex: 1 150px; /*Esto lo que hace es. El primer valor que ponemos es de cuanto queremos que se agrande o se achique el elemento (al ponerle 1 es como poner lo normal del elemento, Si ponemos 2, crece el doble). Y en el segundo cuanto de ancho*/
-    padding: 2px 5px 2px 5px;
+    margin-top: 10px;
+    flex: 1 200px;
+    /*Esto lo que hace es. El primer valor que ponemos es de cuanto queremos que se agrande o se achique el elemento (al ponerle 1 es como poner lo normal del elemento ,Si ponemos 2, crece el doble).Yenelsegundocuantodeancho*/
+
 }
 
 .reserva {
     width: 100%;
-
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
 }
 
 article{
     font-size: 80%;
     text-align: right;
+}
+.tablita-art{
+    text-align: left;
+    font-size: 90%;
 }
 
 .footer-iconos{
