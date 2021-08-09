@@ -8,7 +8,8 @@
 
     <!-- Bootstrap CSS... Este es un link directo al servidor. Pero nosotros usaremos el archivo de bootstrap min de nuestro repositorio. -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.css">
     <title>Lista de hoteles</title>
@@ -30,9 +31,9 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a class="nav-link" href="./index.html">Home</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link active" href="#">Nosotros</a>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a>
+                    <li class="nav-item"><a class="nav-link active" href="#">Precios</a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">Términos y condiciones</a>
                     </li>
@@ -52,15 +53,62 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item" aria-current="page"><a href="./index.html"> Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+                <li class="breadcrumb-item active" aria-current="page">Precios</li>
             </ol>
         </nav>
-        <section class="d-flex">
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga nostrum modi exercitationem culpa
-                expedita quidem, aperiam temporibus optio, aspernatur, maxime esse? Eaque labore distinctio quo aliquam
-                omnis asperiores, enim consectetur.</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, autem rem. Magni distinctio, porro officia nam fuga, quis accusamus dolor voluptates laudantium similique explicabo. Nam non velit exercitationem quas reprehenderit.</p>
-        </section>
+
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead class="thead-light">
+                    <th>Calidad</th>
+                    <th>Montevideo</th>
+                    <th>Canelones</th>
+                    <th>Maldonado</th>
+                    <th>Paysandu</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="oi oi-star"></span></td>
+                        <td>175$</td>
+                        <td>150$</td>
+                        <td>200$</td>
+                        <td>120$</td>
+                    </tr>
+                    <tr>
+                        <td><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                        <td>230$</td>
+                        <td>210$</td>
+                        <td>250$</td>
+                        <td>200$</td>
+                    </tr>
+                    <tr>
+                        <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                class="oi oi-star"></span></td>
+                        <td>300$</td>
+                        <td>270$</td>
+                        <td>350$</td>
+                        <td>210$</td>
+                    </tr>
+                    <tr>
+                        <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                        <td>370$</td>
+                        <td>340$</td>
+                        <td>410$</td>
+                        <td>295$</td>
+                    </tr>
+                    <tr>
+                        <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                class="oi oi-star"></span></td>
+                        <td>450$</td>
+                        <td>430$</td>
+                        <td>550$</td>
+                        <td>370$</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
     <footer class="footer">
         <div class="row">
