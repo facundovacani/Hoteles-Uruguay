@@ -56,72 +56,103 @@
                 <li class="breadcrumb-item active" aria-current="page">Precios</li>
             </ol>
         </nav>
+        <!--Se pueden hacer en pills, simplemente cambiando la clase="nav nav-tab" a "nav nav-pills". Y cambiando en el item list el data-toggle de "tab" a "pill"  -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <!--Con esto generaremos los tabs(pestañas) las cuales el usuario interactuará para mostrar otro contendio. se utilizan las clases y los roles. Desde aquí
+            Hasta---------------------------------------- 
+        -->
+            <li class="nav-item">
+                <a href="#compara" class="nav-link active" id="compara-tab" data-toggle="tab" role="tab"
+                    aria-controls="compara" aria-selected="true">Compara</a>
+            </li>
+            <li class="nav-item">
+                <a href="#tarjetas" class="nav-link" id="tarjetas-tab" data-toggle="tab" role="tab"
+                    aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
+            </li>
+            <li class="nav-item">
+                <a href="#comentarios" class="nav-link" id="comentarios-tab" data-toggle="tab" role="tab"
+                    aria-controls="comentarios" aria-selected="false">Comentarios</a>
+            </li>
 
-        <div class="table-responsive">
-            <table class="table table-hover">
-                <thead class="thead-light">
-                    <th>Calidad</th>
-                    <th>Montevideo</th>
-                    <th>Canelones</th>
-                    <th>Maldonado</th>
-                    <th>Tacuarembo</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="oi oi-star"></span></td>
-                        <td>175$</td>
-                        <td>150$</td>
-                        <td>200$</td>
-                        <td>120$</td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-                        <td>230$</td>
-                        <td>210$</td>
-                        <td>250$</td>
-                        <td>200$</td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span
-                                class="oi oi-star"></span></td>
-                        <td>300$</td>
-                        <td>270$</td>
-                        <td>350$</td>
-                        <td>210$</td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span
-                                class="oi oi-star"></span><span class="oi oi-star"></span></td>
-                        <td>370$</td>
-                        <td>340$</td>
-                        <td>410$</td>
-                        <td>295$</td>
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span
-                                class="oi oi-star"></span><span class="oi oi-star"></span><span
-                                class="oi oi-star"></span></td>
-                        <td>450$</td>
-                        <td>430$</td>
-                        <td>550$</td>
-                        <td>370$</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <article class="d-flex justify-content-center tablita-art">
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                    <h6>Tarjetas aceptadas</h6>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="thead-light">
+                            <th>Calidad</th>
+                            <th>Montevideo</th>
+                            <th>Canelones</th>
+                            <th>Maldonado</th>
+                            <th>Tacuarembo</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="oi oi-star"></span></td>
+                                <td>175$</td>
+                                <td>150$</td>
+                                <td>200$</td>
+                                <td>120$</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                                <td>230$</td>
+                                <td>210$</td>
+                                <td>250$</td>
+                                <td>200$</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                        class="oi oi-star"></span></td>
+                                <td>300$</td>
+                                <td>270$</td>
+                                <td>350$</td>
+                                <td>210$</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                        class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                                <td>370$</td>
+                                <td>340$</td>
+                                <td>410$</td>
+                                <td>295$</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                        class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                        class="oi oi-star"></span></td>
+                                <td>450$</td>
+                                <td>430$</td>
+                                <td>550$</td>
+                                <td>370$</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Tarjeta Nacional</li>
-                    <li class="list-group-item">Tarjeta Internacional</li>
-                    <li class="list-group-item">Tarjeta Argentina</li>
-                </ul>
             </div>
-        </article>
+            <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+                <article class="d-flex justify-content-center tablita-art">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            <h6>Tarjetas aceptadas</h6>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Tarjeta Nacional</li>
+                            <li class="list-group-item">Tarjeta Internacional</li>
+                            <li class="list-group-item">Tarjeta Argentina</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+            <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios</div>
+        </div>
+        <!-- Hasta aquí. Todas estás clases por fuera de las tablas, son las que hacen las tabs.    
+   
+        -->
+
+
+
+        
     </main>
     <br>
     <footer class="footer">
