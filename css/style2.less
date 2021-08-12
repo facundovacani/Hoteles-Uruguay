@@ -1,0 +1,120 @@
+@celeste: #106cfc; //Aquí creamos una variable
+    //Aquí, cada vez que ejecutemos @ npm run scss   en el git bash. Reemplazaremos dichas variables en el style.css de la carpeta.
+
+@amarillo: #e0ee20;
+@blanco: white;
+.margenes(@top: 0px, @bottom: 0px){
+    margin-top: @top;
+    margin-bottom: @bottom;
+}
+@rojo: rgba(226, 24, 24, 0.877);
+@verde: rgba(66, 189, 8, 0.897);
+
+
+.jumbotron {
+    padding: 4px;
+    height: 200px;
+    background: rgba(17, 35, 224, 0.568);
+    background: linear-gradient(0deg, @amarillo 0%, @celeste 100%);
+    background: -o-linear-gradient(top 0deg, @amarillo 0%, @celeste 100%);
+    background: -webkit-linear-gradient(top 0deg, @amarillo 0%, @celeste 100%);
+    background: -moz-linear-gradient(top 0deg, @amarillo 0%, @celeste 100%);
+    .margenes(50px, 0px)
+}
+nav {
+    padding: 10px;
+}
+header > div > h1{
+    margin-top: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 50px;
+    color: @celeste;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+
+}
+
+.footer {
+    height: 230px;
+    padding: 10px 10px 0 10px;
+    background: linear-gradient(0deg, @celeste 0%, @amarillo 100%);
+    background: -webkit-linear-gradient(top 0deg, @celeste 0%, @amarillo 100%);
+    background: -o-linear-gradient(top 0deg, @celeste 0%, @amarillo 100%);
+    background: -moz-linear-gradient(top 0deg, @celeste 0%, @amarillo 100%);
+    margin-bottom: 0px;
+    color: rgb(37, 37, 37);
+    letter-spacing:3px;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
+    overflow:auto;
+    .margenes(10px, 0px)
+
+}
+
+footer a {
+    color: black;
+    display: block;
+    margin-left: 2px;
+    margin-top: 2px;
+    text-decoration: none;
+    
+}
+address{
+    margin-top: 2px;
+    font-size: 90%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.cartaHotel{
+    margin-top: 10px;
+    flex: 1 250px;
+    /*Esto lo que hace es. El primer valor que ponemos es de cuanto queremos que se agrande o se achique el elemento (al ponerle 1 es como poner lo normal del elemento ,Si ponemos 2, crece el doble [No me funcionó]).Yenelsegundocuantodeancho*/
+    transition-property: background-color, box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+    transition-delay: .1s;
+    background-color: @rojo;
+    .margenes(10px, 0px)
+
+}
+.cartaHotel:hover{
+    box-shadow: 1px 1px 20px #393a3ab0;
+}
+.cartaHotel:active{
+    background-color: #f8fc102f;
+}
+.reserva {
+    width: 100%;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+footer > article{
+    font-size: 80%;
+    text-align: right;
+}
+.tablita-art{
+    text-align: left;
+    font-size: 90%;
+}
+
+.footer-iconos{
+    padding-right: 10px;
+}
+
+.tab-content {
+    padding-top: 10px;
+}
+
+[class*="oi-star"]{
+    color: @celeste;
+}
+
+div > [class*="card-img-top"]{
+    height: 22vh;
+}
