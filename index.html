@@ -58,13 +58,16 @@
         </nav>
         <div class="row">
             <div class="col-sm-4">
-                <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#somos" aria-expanded="false" aria-controls="multiCollapse1">¿Qué somos?</button>
+                <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#somos"
+                    aria-expanded="false" aria-controls="multiCollapse1">¿Qué somos?</button>
             </div>
             <div class="col-sm-4">
-                <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multiCollapse2">¿Cómo reservo?</button>
+                <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#reserva"
+                    aria-expanded="false" aria-controls="multiCollapse2">¿Cómo reservo?</button>
             </div>
             <div class="col-sm-4">
-                <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">¿Cómo y donde pago?</button>
+                <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#pago"
+                    aria-expanded="false" aria-controls="multiCollapse3">¿Cómo y donde pago?</button>
             </div>
         </div>
         <!-- Aquí tenemos los collapses, al apretar el botón se mostrará los respectivos div de cada collapse. Asociados con un id -->
@@ -104,7 +107,7 @@
                 <img src="images/cabañas.jpg" class="card-img-top" alt="hotel imagen">
                 <div class="card-body">
 
-                    <h5 class="card-title">Hotel Deseado</h5>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con 2 actividades acuaticas gratis">Hotel Deseado</h5> <!--Hay que activar los tooltip con un script.-->
                     <h6 class="card-subtitle">Rocha</h6>
                     <hr>
 
@@ -112,12 +115,15 @@
                         Hotel con cabañas sobre el mar, donde podras realizar distintas actividades. Entre ellas: buceo,
                         navegación a vela, surf, y otros más.
                     </p>
+                    <!-- <button class="btn btn-outline-primary" data-toggle="modal" data-target="#contacto">Contacto</button> -->
+                    <button class="btn btn-outline-primary " data-toggle="popover" data-placement="top" title="Promoción" data-content="Consultá las promociones vigentes.">Contacto</button>
                 </div>
                 <div>
-                    <button class="btn btn-success reserva">Reservar</button>
+                    <button class="btn btn-success reserva" data-toggle="modal" data-target="#registro">Reservar</button>
                     <div class="card-footer text-muted text-center">
                         Hace 5 días
-                      </div>
+                    </div>
+                    
 
                 </div>
 
@@ -137,13 +143,15 @@
                         Hotel con un polideportivo, en la que podrán acceder a tenis, futbol, basquetbol, natación, y
                         otros deportes.
                     </p>
+                    <!-- <button class="btn btn-outline-primary" data-toggle="modal" data-target="#contacto">Contacto</button> -->
+                    <button class="btn btn-outline-primary " data-toggle="popover" data-placement="top" title="Promoción" data-content="Consultá las promociones vigentes.">Contacto</button>
 
                 </div>
                 <div>
-                    <button class="btn btn-success reserva">Reservar</button>
+                    <button class="btn btn-success reserva" data-toggle="modal" data-target="#registro">Reservar</button>
                     <div class="card-footer text-muted text-center">
                         Hace 1 día
-                      </div>
+                    </div>
                 </div>
 
             </div>
@@ -161,18 +169,20 @@
                         Hotel de 15 pisos con piscina en la planta baja y en la planta más alta, cuenta también con
                         jacuzzis y restaurantes de lujos.
                     </p>
+                    <!-- <button class="btn btn-outline-primary " data-toggle="modal" data-target="#contacto">Contacto</button> -->
+                    <button class="btn btn-outline-primary " data-toggle="popover" data-placement="top" title="Promoción" data-content="Consultá las promociones vigentes.">Contacto</button>
                 </div>
 
                 <div>
-                    <button class="btn btn-success reserva">Reservar</button>
+                    <button class="btn btn-success reserva" data-toggle="modal" data-target="#registro">Reservar</button>
                     <div class="card-footer text-muted text-center">
                         Hace 2 semanas
-                      </div>
+                    </div>
                 </div>
 
             </div>
             <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-primary">
-                <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span></span><span
+                <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span
                         class="oi oi-star"></span><span class="oi oi-star"></span></div>
                 <img src="images/valizas.jpg" class="card-img-top" alt="hotel imagen">
                 <div class="card-body">
@@ -183,13 +193,15 @@
                     <hr>
                     <p class="card-text">Ubicado en Barra de Valizas, aquí podrás disfrutar de los bosques, el oceano,
                         el arroyo y la laguna más bellos de Rocha.</p>
-
+                    <!-- <button class="btn btn-outline-primary " data-toggle="modal"
+                        data-target="#contacto">Contacto</button> -->
+                        <button class="btn btn-outline-primary " data-toggle="popover" data-placement="top" title="Promoción" data-content="Consultá las promociones vigentes.">Contacto</button>
                 </div>
                 <div>
-                    <button class="btn btn-success reserva">Reservar</button>
+                    <button class="btn btn-success reserva" data-toggle="modal" data-target="#registro">Reservar</button>
                     <div class="card-footer text-muted text-center">
                         Hace 3 semanas
-                      </div>
+                    </div>
                 </div>
 
             </div>
@@ -208,13 +220,16 @@
                     <p class="card-text">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, vero.
                     </p>
+                    <button class="btn btn-outline-primary " data-toggle="popover" data-placement="top" title="Promoción" data-content="Consultá las promociones vigentes.">Contacto</button>
+                    <!-- <button class="btn btn-outline-primary" data-toggle="modal"
+                        data-target="#contacto">Contacto</button> -->
                 </div>
                 <div>
 
-                    <button class="btn btn-success reserva ">Reservar</button>
+                    <button class="btn btn-success reserva" data-toggle="modal" data-target="#registro">Reservar</button>
                     <div class="card-footer text-muted text-center">
                         Hace 2 meses
-                      </div>
+                    </div>
                 </div>
 
 
@@ -233,12 +248,15 @@
                     <p class="card-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure quasi.
                     </p>
+                    <button class="btn btn-outline-primary " data-toggle="popover" data-placement="top" title="Promoción" data-content="Consultá las promociones vigentes.">Contacto</button>
+                    <!-- <button class="btn btn-outline-primary " data-toggle="modal"
+                        data-target="#contacto">Contacto</button> -->
                 </div>
                 <div>
-                    <button class="btn btn-success reserva">Reservar</button>
+                    <button class="btn btn-success reserva" data-toggle="modal" data-target="#registro">Reservar</button>
                     <div class="card-footer text-muted text-center">
                         Hace 1 semana
-                      </div>
+                    </div>
                 </div>
 
 
@@ -257,18 +275,90 @@
                     <p class="card-text">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident sunt voluptatibus pariatur
                         esse.</p>
+                        <button class="btn btn-outline-primary " data-toggle="popover" data-placement="top" title="Promoción" data-content="Consultá las promociones vigentes.">Contacto</button>
+                    <!-- <button class="btn btn-outline-primary " data-toggle="modal"
+                        data-target="#contacto">Contacto</button> -->
                 </div>
                 <div>
-                    <button class="btn btn-success reserva">Reservar</button>
+                    <button class="btn btn-success reserva" data-toggle="modal" data-target="#registro">Reservar</button>
                     <div class="card-footer text-muted text-center">
                         Hace 2 días
-                      </div>
+                    </div>
                 </div>
 
 
             </div>
 
+            <!-- Modal -->
+            <!-- <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-success" id="exampleModalLabel">Contacto con el hotel</h5>
+                            <button type="button" data-dismiss="modal" aria-label="Close" class="close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label text-primary">Tu email:</label>
+                                    <input type="text" class="form-control" id="recipient-name" value="xxxx@gmail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label text-primary">Mensaje</label>
+                                    <textarea class="form-control" id="message-text">¡Hola! Me interesa reservar en las próximas semanas.</textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
 
+            <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-success" id="exampleModalLabel2">Registro</h5>
+                        <button type="button" data-dismiss="modal" aria-label="Close" class="close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="nombre-modal" class="col-form-label text-primary">Tu nombre completo:</label>
+                                <input type="text" class="form-control" id="nombre-modal" placeholder="Nombre Completo">
+                            </div>
+                            <div class="form-group">
+                                <label for="email-modal" class="col-form-label text-primary">Tu email:</label>
+                                <input type="email" class="form-control" id="email-modal" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="tarjeta-modal" class="col-form-label text-primary">Tarjeta de crédito:</label>
+                                <select name="tarjetasPago" class="form-control" id="tarjeta-modal">
+                                    <option selected>Tarjeta Nacional</option>
+                                    <option >Tarjeta Internacional</option>
+                                    <option >Tarjeta Argentina</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="numTarjeta-modal" class="col-form-label text-primary">Tu número de tarjeta de crédito:</label>
+                                <input type="text" class="form-control" id="numTarjeta-modal" placeholder="Número de Tarjeta" value="XXXX-XXXX-XXXX-XXXX">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -286,8 +376,8 @@
                 <a href="http://www.instagram.com">Instagram</a>
             </div>
             <div class="col-4 flex-column align-items-center">
+                <h4>Oficina Central</h4>
                 <address>
-                    <h3>Oficina Central</h3>
                     <p><span class="oi oi-map-marker footer-iconos"></span>Centro, Montevideo, Uruguay.</p>
                     <p><span class="oi oi-inbox footer-iconos"></span>cont@ghoteles.com</p>
                     <p><span class="oi oi-phone footer-iconos"></span>+0123456789</p>
@@ -323,6 +413,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+
+
+    <!-- No utilicé la librería del node_modules ya que está muy desactualizado este curso. Me instalo la versión de bootstrap 5. Que ya no usa JQuery. -->
+        <!-- Para hacer funcionar a los TOOLTIP y a los POPOVERS, hay que definir un script que indique su activación dentro de la pag. -->
+        <script>
+            $(function(){
+                $("[data-toggle='tooltip']").tooltip();
+                $("[data-toggle='popover']").popover();
+
+            });
+
+        </script>
+
 
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
