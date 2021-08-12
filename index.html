@@ -10,7 +10,7 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.css">
     <!-- Con este ultimo link enlazamos nuestros iconos que hay en el node_modules. Descargados anteriormente en la consola. -->
     <title>Lista de hoteles</title>
@@ -124,7 +124,7 @@
 
             <!-- Con d-flex flex-wrap hacemos que se "respete" el ancho del navegador. (horizontalmente.)-->
             <!-- la clase flex-row-reverse (ej: class="d-flex flex-wrap flex-row-reverse") lo que hará es invertir el orden de los elementos.-->
-            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-primary">
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-light ">
                 <!--la clase de bootstrap justify-content-between, hace que se separe el contenido, para no dejar un espacio en blanco donde no debería haberlo. Para poder alinearlo bien.-->
                 <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span
                         class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></div>
@@ -141,9 +141,11 @@
                         Hotel con cabañas sobre el mar, donde podras realizar distintas actividades. Entre ellas: buceo,
                         navegación a vela, surf, y otros más.
                     </p>
-                    <!-- <button class="btn btn-outline-primary" data-toggle="modal" data-target="#contacto">Contacto</button> -->
+
                     <button class="btn btn-outline-primary " data-toggle="popover" data-placement="top"
-                        title="Promoción" data-content="Consultá las promociones vigentes.">Contacto</button>
+                        title="Promoción" data-content="Consultá las promociones vigentes.">Info</button>
+                    <button class="btn btn-outline-primary" data-toggle="modal"
+                        data-target="#contacto">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-success reserva" data-toggle="modal"
@@ -157,14 +159,14 @@
 
 
             </div>
-            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-primary">
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-light ">
                 <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span
                         class="oi oi-star"></span><span class="oi oi-star"></span></div>
                 <img src="images/depor.jpg" class="card-img-top" alt="hotel imagen">
                 <div class="card-body">
 
                     <h5 class="card-title" data-toggle="tooltip" data-placement="top"
-                    title="Las primeras reservas cuentan con 2 cenas gratis">Hotel Fit</h5>
+                        title="Las primeras reservas cuentan con 2 cenas gratis">Hotel Fit</h5>
 
                     <h6 class="card-subtitle">Maldonado</h6>
                     <hr>
@@ -172,9 +174,11 @@
                         Hotel con un polideportivo, en la que podrán acceder a tenis, futbol, basquetbol, natación, y
                         otros deportes.
                     </p>
-                    <!-- <button class="btn btn-outline-primary" data-toggle="modal" data-target="#contacto">Contacto</button> -->
+
                     <button class="btn btn-outline-primary " data-toggle="popover" data-placement="top"
-                        title="Promoción" data-content="Consultá las promociones vigentes.">Contacto</button>
+                        title="Promoción" data-content="Consultá las promociones vigentes.">Info</button>
+                    <button class="btn btn-outline-primary" data-toggle="modal"
+                        data-target="#contacto">Contacto</button>
 
                 </div>
                 <div>
@@ -186,14 +190,14 @@
                 </div>
 
             </div>
-            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-primary">
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-light ">
                 <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span
                         class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></div>
 
                 <img src="images/hotel.jpg" class="card-img-top" alt="hotel imagen">
                 <div class="card-body">
                     <h5 class="card-title" data-toggle="tooltip" data-placement="top"
-                    title="Las reservas incluyen las 4 comidas del día">Hotel Lujuria</h5>
+                        title="Las reservas incluyen las 4 comidas del día">Hotel Lujuria</h5>
 
                     <h6 class="card-subtitle">Montevideo</h6>
                     <hr>
@@ -201,9 +205,11 @@
                         Hotel de 15 pisos con piscina en la planta baja y en la planta más alta, cuenta también con
                         jacuzzis y restaurantes de lujos.
                     </p>
-                    <!-- <button class="btn btn-outline-primary " data-toggle="modal" data-target="#contacto">Contacto</button> -->
+
                     <button class="btn btn-outline-primary " data-toggle="popover" data-placement="top"
-                        title="Promoción" data-content="Consultá las promociones vigentes.">Contacto</button>
+                        title="Promoción" data-content="Consultá las promociones vigentes.">Info</button>
+                    <button class="btn btn-outline-primary " data-toggle="modal"
+                        data-target="#contacto">Contacto</button>
                 </div>
 
                 <div>
@@ -215,23 +221,24 @@
                 </div>
 
             </div>
-            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-primary">
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-light ">
                 <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span
                         class="oi oi-star"></span><span class="oi oi-star"></span></div>
                 <img src="images/valizas.jpg" class="card-img-top" alt="hotel imagen">
                 <div class="card-body">
 
                     <h5 class="card-title" data-toggle="tooltip" data-placement="top"
-                    title="Las reservas no incluyen merienda ni desayuno">Hotel Perlas</h5>
+                        title="Las reservas no incluyen merienda ni desayuno">Hotel Perlas</h5>
 
                     <h6 class="card-subtitle">Rocha</h6>
                     <hr>
                     <p class="card-text">Ubicado en Barra de Valizas, aquí podrás disfrutar de los bosques, el oceano,
                         el arroyo y la laguna más bellos de Rocha.</p>
-                    <!-- <button class="btn btn-outline-primary " data-toggle="modal"
-                        data-target="#contacto">Contacto</button> -->
+                    
                     <button class="btn btn-outline-primary " data-toggle="popover" data-placement="top"
-                        title="Promoción" data-content="Consultá las promociones vigentes.">Contacto</button>
+                        title="Promoción" data-content="Consultá las promociones vigentes.">Info</button>
+                        <button class="btn btn-outline-primary " data-toggle="modal"
+                        data-target="#contacto">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-success reserva" data-toggle="modal"
@@ -244,13 +251,13 @@
             </div>
 
 
-            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-primary">
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-light ">
                 <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span
                         class="oi oi-star"></span><span class="oi oi-star"></span></div>
                 <img src="images/punta.jpg" class="card-img-top" alt="hotel imagen">
                 <div class="card-body">
-                    <h5 class="card-title" data-toggle="tooltip" data-placement="top"
-                    title="Agotado en Enero">Hotel Maldonado</h5>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Agotado en Enero">Hotel
+                        Maldonado</h5>
 
                     <h6 class="card-subtitle">Maldonado</h6>
                     <hr>
@@ -259,9 +266,9 @@
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, vero.
                     </p>
                     <button class="btn btn-outline-primary " data-toggle="popover" data-placement="top"
-                        title="Promoción" data-content="Consultá las promociones vigentes.">Contacto</button>
-                    <!-- <button class="btn btn-outline-primary" data-toggle="modal"
-                        data-target="#contacto">Contacto</button> -->
+                        title="Promoción" data-content="Consultá las promociones vigentes.">Info</button>
+                    <button class="btn btn-outline-primary" data-toggle="modal"
+                        data-target="#contacto">Contacto</button>
                 </div>
                 <div>
 
@@ -275,13 +282,13 @@
 
             </div>
 
-            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-primary">
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-light ">
                 <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span
                         class="oi oi-star"></span></div>
                 <img src="images/gregorio.jpg" class="card-img-top" alt="hotel imagen">
                 <div class="card-body">
                     <h5 class="card-title" data-toggle="tooltip" data-placement="top"
-                    title="Las primeras reservas cuentan con paseo a caballo gratis">Hotel Gaucho</h5>
+                        title="Las primeras reservas cuentan con paseo a caballo gratis">Hotel Gaucho</h5>
 
                     <h6 class="card-subtitle">Tacuarembo</h6>
 
@@ -290,9 +297,9 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iure quasi.
                     </p>
                     <button class="btn btn-outline-primary " data-toggle="popover" data-placement="top"
-                        title="Promoción" data-content="Consultá las promociones vigentes.">Contacto</button>
-                    <!-- <button class="btn btn-outline-primary " data-toggle="modal"
-                        data-target="#contacto">Contacto</button> -->
+                        title="Promoción" data-content="Consultá las promociones vigentes.">Info</button>
+                    <button class="btn btn-outline-primary " data-toggle="modal"
+                        data-target="#contacto">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-success reserva" data-toggle="modal"
@@ -305,13 +312,13 @@
 
             </div>
 
-            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-primary">
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-light ">
                 <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span
                         class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></div>
                 <img src="images/costa-azul.jpg" class="card-img-top" alt="hotel imagen">
                 <div class="card-body">
                     <h5 class="card-title" data-toggle="tooltip" data-placement="top"
-                    title="Las primeras reservas cuentan con un paseo en barco gratis">Hotel Costa Azul</h5>
+                        title="Las primeras reservas cuentan con un paseo en barco gratis">Hotel Costa Azul</h5>
 
                     <h6 class="card-subtitle">Canelones</h6>
                     <hr>
@@ -320,9 +327,9 @@
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident sunt voluptatibus pariatur
                         esse.</p>
                     <button class="btn btn-outline-primary " data-toggle="popover" data-placement="top"
-                        title="Promoción" data-content="Consultá las promociones vigentes.">Contacto</button>
-                    <!-- <button class="btn btn-outline-primary " data-toggle="modal"
-                        data-target="#contacto">Contacto</button> -->
+                        title="Promoción" data-content="Consultá las promociones vigentes.">Info</button>
+                    <button class="btn btn-outline-primary " data-toggle="modal"
+                        data-target="#contacto">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-success reserva" data-toggle="modal"
@@ -334,82 +341,112 @@
 
 
             </div>
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-light ">
+                <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                        class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></div>
+                <img src="images/hotel2.jpg" class="card-img-top" alt="hotel imagen">
+                <div class="card-body">
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top"
+                        title="Las primeras reservas cuentan con un evento en el teatro más lindo de Piriapolis">Hotel
+                        Piria</h5>
 
-            <!-- Modal -->
-            <!-- <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title text-success" id="exampleModalLabel">Contacto con el hotel</h5>
-                            <button type="button" data-dismiss="modal" aria-label="Close" class="close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="recipient-name" class="col-form-label text-primary">Tu email:</label>
-                                    <input type="text" class="form-control" id="recipient-name" value="xxxx@gmail.com">
-                                </div>
-                                <div class="form-group">
-                                    <label for="message-text" class="col-form-label text-primary">Mensaje</label>
-                                    <textarea class="form-control" id="message-text">¡Hola! Me interesa reservar en las próximas semanas.</textarea>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-success">Enviar</button>
+                    <h6 class="card-subtitle">Maldonado</h6>
+                    <hr>
+
+                    <p class="card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident sunt voluptatibus pariatur
+                        esse.</p>
+                    <button class="btn btn-outline-primary " data-toggle="popover" data-placement="top"
+                        title="Promoción" data-content="Viaje gratis guiado al Cerro de Pan de Azúcar.">Info</button>
+                    <button class="btn btn-outline-primary " data-toggle="modal"
+                        data-target="#contacto">Contacto</button>
+                </div>
+                <div>
+                    <button class="btn btn-success reserva" data-toggle="modal"
+                        data-target="#registro">Reservar</button>
+                    <div class="card-footer text-muted text-center">
+                        Hace 2 días
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-success" id="exampleModalLabel">Contacto con el hotel</h5>
+                                <button type="button" data-dismiss="modal" aria-label="Close" class="close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label text-primary">Tu
+                                            email:</label>
+                                        <input type="text" class="form-control" id="recipient-name"
+                                            value="xxxx@gmail.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message-text" class="col-form-label text-primary">Mensaje</label>
+                                        <textarea class="form-control"
+                                            id="message-text">¡Hola! Me interesa reservar en las próximas semanas.</textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success">Enviar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div> -->
-
-            <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title text-success" id="exampleModalLabel2">Registro</h5>
-                            <button type="button" data-dismiss="modal" aria-label="Close" class="close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="nombre-modal" class="col-form-label text-primary">Tu nombre
-                                        completo:</label>
-                                    <input type="text" class="form-control" id="nombre-modal"
-                                        placeholder="Nombre Completo">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email-modal" class="col-form-label text-primary">Tu email:</label>
-                                    <input type="email" class="form-control" id="email-modal" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="tarjeta-modal" class="col-form-label text-primary">Tarjeta de
-                                        crédito:</label>
-                                    <select name="tarjetasPago" class="form-control" id="tarjeta-modal">
-                                        <option selected>Tarjeta Nacional</option>
-                                        <option>Tarjeta Internacional</option>
-                                        <option>Tarjeta Argentina</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="numTarjeta-modal" class="col-form-label text-primary">Tu número de
-                                        tarjeta de crédito:</label>
-                                    <input type="text" class="form-control" id="numTarjeta-modal"
-                                        placeholder="Número de Tarjeta" value="XXXX-XXXX-XXXX-XXXX">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-success">Enviar</button>
+                <!-- Modal -->
+                <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-success" id="exampleModalLabel2">Registro</h5>
+                                <button type="button" data-dismiss="modal" aria-label="Close" class="close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="nombre-modal" class="col-form-label text-primary">Tu nombre
+                                            completo:</label>
+                                        <input type="text" class="form-control" id="nombre-modal"
+                                            placeholder="Nombre Completo">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email-modal" class="col-form-label text-primary">Tu email:</label>
+                                        <input type="email" class="form-control" id="email-modal" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="tarjeta-modal" class="col-form-label text-primary">Tarjeta de
+                                            crédito:</label>
+                                        <select name="tarjetasPago" class="form-control" id="tarjeta-modal">
+                                            <option selected>Tarjeta Nacional</option>
+                                            <option>Tarjeta Internacional</option>
+                                            <option>Tarjeta Argentina</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="numTarjeta-modal" class="col-form-label text-primary">Tu número de
+                                            tarjeta de crédito:</label>
+                                        <input type="text" class="form-control" id="numTarjeta-modal"
+                                            placeholder="Número de Tarjeta" value="XXXX-XXXX-XXXX-XXXX">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success">Enviar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
 
 
@@ -442,7 +479,7 @@
                 <a href="">Contacto</a>
             </div>
         </div>
-        <br>
+        
         <article>
             <span>Todo esto es ficción. Nada de lo que está aquí es real. </span>
         </article>
@@ -476,6 +513,27 @@
             $('.carousel').carousel({
                 interval: 5000
             });
+
+            $('#contacto').on('show.bs.modal', function (e){
+                console.log('El modal contacto se está mostrando');
+            //el on en JQuery siempre se utiliza para subscribir un evento. 
+                $('[data-target="#contacto"]').removeClass('btn-outline-primary');
+                $('[data-target="#contacto"]').addClass('btn-outline-success'); /*Esto lo que va a hacer, es quitar la clase de cada elemento que tenga el atributo determinado valor con removeClass(). En este caso es data-target="#contacto". Y a gregarle otro con addClass()*/
+                //$('[data-target="#contacto"]').prop('disabled', true); //Aquí le decimos que deshabilitamos lo anterior cada vez que se desabilite elvento correspondiente. A mi no me funcionó.
+            });
+            $('#contacto').on('shown.bs.modal', function (e){
+                console.log('El modal contacto se mostró');
+                
+            });
+            $('#contacto').on('hide.bs.modal', function (e){
+                console.log('El modal contacto se está ocultando');
+            });
+            $('#contacto').on('hidden.bs.modal', function (e){
+                console.log('El modal contacto se ocultó');
+                $('[data-target="#contacto"]').removeClass('btn-outline-success');
+                $('[data-target="#contacto"]').addClass('btn-outline-primary'); //Esto funcionaría como el $('[data-target="#contacto"]').prop('disabled', true); del primer evento del modal. 
+            });
+
 
         });
 
