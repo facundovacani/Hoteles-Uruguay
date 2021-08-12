@@ -1,11 +1,13 @@
 $celeste: #106cfc; //Aquí creamos una variable
     //Aquí, cada vez que ejecutemos $ npm run scss   en el git bash. Reemplazaremos dichas variables en el style.css de la carpeta.
-@mixin margenes ($top, $bottom){
+@mixin margenesYCol ($top, $bottom, $color){
     margin-top: $top;
     margin-bottom: $bottom;
     //Aquí creamos un mixin con @mixin y le agregamos los parametros y los atributos que cambiaran dichos parametros
+    color: $color;
 }
 $amarillo: #e0ee20;
+$blanco: white;
 @mixin fondo ($colorrr){
     background-color: $colorrr;
 }
@@ -24,7 +26,7 @@ body{
     background: -o-linear-gradient(top 0deg, $amarillo 0%, $celeste 100%);
     background: -webkit-linear-gradient(top 0deg, $amarillo 0%, $celeste 100%);
     background: -moz-linear-gradient(top 0deg, $amarillo 0%, $celeste 100%);
-    @include margenes(50px, 0px );
+    @include margenesYCol(50px, 0px, $verde);
     //Aquí llamamos al mixin con @include y de parametros usamos los valores que queremos darle.
 }
 nav {
@@ -54,7 +56,7 @@ header > div > h1{
     bottom: 0;
     width: 100%;
     overflow:auto;
-    @include margenes(10px, 0px);
+    @include margenesYCol(10px, 0px, $blanco);
 }
 
 footer a {
@@ -80,7 +82,7 @@ address{
     transition-duration: .3s;
     transition-timing-function: linear;
     transition-delay: .1s;
-    @include margenes(10px, 0px);
+    @include margenesYCol(10px, 0px, $blanco);
     background-color: $rojo;
 
 }
