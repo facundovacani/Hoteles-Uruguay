@@ -45,7 +45,7 @@
         </nav>
         <div class="jumbotron">
             <br>
-            <h1 class="display-4">Hoteles Uruguay</h1>
+            <h1 class="display-3">Hoteles Uruguay</h1>
         </div>
         <br>
     </header>
@@ -56,19 +56,31 @@
                 <li class="breadcrumb-item active" aria-current="page">Home</li>
             </ol>
         </nav>
-        <section class="row">
+        <div class="row">
             <div class="col-sm-4">
+                <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#somos" aria-expanded="false" aria-controls="multiCollapse1">¿Qué somos?</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multiCollapse2">¿Cómo reservo?</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">¿Cómo y donde pago?</button>
+            </div>
+        </div>
+        <!-- Aquí tenemos los collapses, al apretar el botón se mostrará los respectivos div de cada collapse. Asociados con un id -->
+        <section class="row">
+            <div class="col-sm-4 collapse multi-collapse" id="somos">
                 <h2>¿Que somos?</h2>
                 <p>Somos una empresa con el objetivo de facilitar la accesibilidad a todas las personas que estén o
                     quieran venir al Uruguay, a la hora de reservar distintos hoteles.Esto hace que tengan la mayor
                     parte del meracado hotelero en nuestro aplicación.</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 collapse multi-collapse" id="reserva">
                 <h2>¿Cómo reservo?</h2>
                 <p>Muy fácil. Tendrás que dar en el botón <b>Reservar</b> completar un formulario y así acceder a los
                     distintos hoteles que hay por el país.</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 collapse multi-collapse" id="pago">
                 <h2>¿Cómo y dónde se paga?</h2>
                 <p>Puedes pagar tu futura estadia con tarjeta de crédito o débito, o pagar al contado en el hotel, eso
                     se especificará en el formulario que llenes al apretar en el botón <b>Reservar</b>.</p>
@@ -85,7 +97,7 @@
 
             <!-- Con d-flex flex-wrap hacemos que se "respete" el ancho del navegador. (horizontalmente.)-->
             <!-- la clase flex-row-reverse (ej: class="d-flex flex-wrap flex-row-reverse") lo que hará es invertir el orden de los elementos.-->
-            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2">
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-primary">
                 <!--la clase de bootstrap justify-content-between, hace que se separe el contenido, para no dejar un espacio en blanco donde no debería haberlo. Para poder alinearlo bien.-->
                 <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span
                         class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></div>
@@ -111,7 +123,7 @@
 
 
             </div>
-            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2">
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-primary">
                 <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span
                         class="oi oi-star"></span><span class="oi oi-star"></span></div>
                 <img src="images/depor.jpg" class="card-img-top" alt="hotel imagen">
@@ -135,7 +147,7 @@
                 </div>
 
             </div>
-            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2">
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-primary">
                 <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span
                         class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></div>
 
@@ -159,7 +171,7 @@
                 </div>
 
             </div>
-            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2">
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-primary">
                 <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span></span><span
                         class="oi oi-star"></span><span class="oi oi-star"></span></div>
                 <img src="images/valizas.jpg" class="card-img-top" alt="hotel imagen">
@@ -183,7 +195,7 @@
             </div>
 
 
-            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2">
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-primary">
                 <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span
                         class="oi oi-star"></span><span class="oi oi-star"></span></div>
                 <img src="images/punta.jpg" class="card-img-top" alt="hotel imagen">
@@ -208,7 +220,7 @@
 
             </div>
 
-            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2">
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-primary">
                 <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span
                         class="oi oi-star"></span></div>
                 <img src="images/gregorio.jpg" class="card-img-top" alt="hotel imagen">
@@ -232,7 +244,7 @@
 
             </div>
 
-            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2">
+            <div class="card cartaHotel d-flex flex-column justify-content-between ml-2 mr-2 text-primary">
                 <div class="card-header"><span class="oi oi-star"></span><span class="oi oi-star"></span><span
                         class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></div>
                 <img src="images/costa-azul.jpg" class="card-img-top" alt="hotel imagen">
