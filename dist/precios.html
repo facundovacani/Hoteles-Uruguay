@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS... Este es un link directo al servidor. Pero nosotros usaremos el archivo de bootstrap min de nuestro repositorio. -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/index.ab3bf8adca0dae175c88.css">
+
+    <title>Lista de hoteles</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+            <!--navbar-expand-tamaño sirve para que se muestre la barra de navegación siempre que el tamaño de la pantalla de como para que se expandan todo el contenido.
+                fixed-top sirve para que la barra de navegación quede fija arriba por mas que nos desplacemos por la pag.
+        Hay que agregar un margen porque si no se "come" parte de la pagina.-->
+            <a class="navbar-brand text-white" href="./index.html">Hoteles</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Precios</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Términos y condiciones</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron">
+            <br>
+            <h1 class="display-3">Hoteles Uruguay</h1>
+        </div>
+        <br>
+    </header>
+
+    <main class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" aria-current="page"><a href="./index.html"> Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Precios</li>
+            </ol>
+        </nav>
+        <!--Se pueden hacer en pills, simplemente cambiando la clase="nav nav-tab" a "nav nav-pills". Y cambiando en el item list el data-toggle de "tab" a "pill"  -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <!--Con esto generaremos los tabs(pestañas) las cuales el usuario interactuará para mostrar otro contendio. se utilizan las clases y los roles. Desde aquí
+            Hasta---------------------------------------- 
+        -->
+            <li class="nav-item">
+                <a href="#compara" class="nav-link active" id="compara-tab" data-toggle="tab" role="tab"
+                    aria-controls="compara" aria-selected="true">Compara</a>
+            </li>
+            <li class="nav-item">
+                <a href="#tarjetas" class="nav-link" id="tarjetas-tab" data-toggle="tab" role="tab"
+                    aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
+            </li>
+            <li class="nav-item">
+                <a href="#comentarios" class="nav-link" id="comentarios-tab" data-toggle="tab" role="tab"
+                    aria-controls="comentarios" aria-selected="false">Comentarios</a>
+            </li>
+
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="thead-light">
+                            <th>Calidad</th>
+                            <th>Montevideo</th>
+                            <th>Canelones</th>
+                            <th>Maldonado</th>
+                            <th>Tacuarembo</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="oi oi-star"></span></td>
+                                <td>175$</td>
+                                <td>150$</td>
+                                <td>200$</td>
+                                <td>120$</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                                <td>230$</td>
+                                <td>210$</td>
+                                <td>250$</td>
+                                <td>200$</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                        class="oi oi-star"></span></td>
+                                <td>300$</td>
+                                <td>270$</td>
+                                <td>350$</td>
+                                <td>210$</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                        class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                                <td>370$</td>
+                                <td>340$</td>
+                                <td>410$</td>
+                                <td>295$</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                        class="oi oi-star"></span><span class="oi oi-star"></span><span
+                                        class="oi oi-star"></span></td>
+                                <td>450$</td>
+                                <td>430$</td>
+                                <td>550$</td>
+                                <td>370$</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+                <!-- <article class="d-flex justify-content-center tablita-art">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            <h6>Tarjetas aceptadas</h6>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Tarjeta Nacional</li>
+                            <li class="list-group-item">Tarjeta Internacional</li>
+                            <li class="list-group-item">Tarjeta Argentina</li>
+                        </ul>
+                    </div>
+                </article> -->
+                <!-- Utilizaremos el accordions. Es muy parecido al collapse, pero va abriendo las respectivas secciones y cerrando las anteriores. -->
+                <article class="accordion" id="accordionTarjetas">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseNacional" aria-expanded="true" aria-controls="collapseNacional">
+                                    Tarjeta Nacional
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseNacional" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Podes reservar hasta en 6 cuotas sin intereses.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseInter" aria-expanded="false" aria-controls="collapseInter">
+                                    Tarjeta Internacional
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseInter" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Podes reservar hasta en 3 cuotas sin intereses. En caso de no residir en Uruguay, se te devolverá el IVA.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseArgentina" aria-expanded="false" aria-controls="collapseArgentina">
+                                    Tarjeta Argentina
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseArgentina" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Podes reservar hasta en 6 cuotas sin intereses. Se te devolverá el IVA.
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios</div>
+        </div>
+        <!-- Hasta aquí. Todas estás clases por fuera de las tablas, son las que hacen las tabs.    
+   
+        -->
+
+
+
+        
+    </main>
+    <br>
+    <footer class="footer">
+        <div class="row">
+
+            <div class="col-4 d-flex flex-column align-items-start">
+                <a href="http://www.facebook.com">Facebook</a>
+                <a href="http://www.twitter.com">Twitter</a>
+                <a href="http://www.google.com">Google</a>
+                <a href="http://www.instagram.com">Instagram</a>
+            </div>
+            <div class="col-4 flex-column align-items-center">
+                <h4>Oficina Central</h4>
+                <address>
+                    <p><span class="oi oi-map-marker footer-iconos"></span>Centro, Montevideo, Uruguay.</p>
+                    <p><span class="oi oi-inbox footer-iconos"></span>cont@ghoteles.com</p>
+                    <p><span class="oi oi-phone footer-iconos"></span>+0123456789</p>
+
+                </address>
+            </div>
+            <div class="col-4 d-flex flex-column align-items-end">
+                <a href="">Nosotros</a>
+                <a href="">Precios</a>
+                <a href="">Terminos y condiciones</a>
+                <a href="">Contacto</a>
+            </div>
+        </div>
+        <br>
+        <article>
+            <span>Todo esto es ficción. Nada de lo que está aquí es real. </span>
+        </article>
+
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> -->
+    <!-- Estos sirven para la versión 5 de bootstrap. -->
+    <!-- Nosotros utilizaremos la version 4 de bootstrap, el cual usaba jquery. -->
+    <script src="js/main.38effe1c2f96bf144dc6.js"></script>
+
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
