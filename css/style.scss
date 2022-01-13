@@ -7,7 +7,7 @@ $celeste: #106cfc; //Aquí creamos una variable
     color: $color;
 }
 $amarillo: #e0ee20;
-$blanco: white;
+$blanco: rgba(255,255,255,1);
 @mixin fondo ($colorrr){
     background-color: $colorrr;
 }
@@ -15,18 +15,18 @@ $rojo: rgba(226, 24, 24, 0.877);
 $verde: rgba(66, 189, 8, 0.897);
 
 body{
-    @include fondo($amarillo);
+    @include fondo($blanco);
 }
 
 .jumbotron {
     padding: 4px;
     height: 200px;
     background: rgba(17, 35, 224, 0.568);
-    background: linear-gradient(0deg, $amarillo 0%, $celeste 100%);
-    background: -o-linear-gradient(top 0deg, $amarillo 0%, $celeste 100%);
-    background: -webkit-linear-gradient(top 0deg, $amarillo 0%, $celeste 100%);
-    background: -moz-linear-gradient(top 0deg, $amarillo 0%, $celeste 100%);
-    @include margenesYCol(50px, 0px, $verde);
+    background: linear-gradient(0deg, $blanco 0%, $celeste 100%);
+    background: -o-linear-gradient(top 0deg, $blanco 0%, $celeste 100%);
+    background: -webkit-linear-gradient(top 0deg, $blanco 0%, $celeste 100%);
+    background: -moz-linear-gradient(top 0deg, $blanco 0%, $celeste 100%);
+    @include margenesYCol(50px, 0px, black);
     //Aquí llamamos al mixin con @include y de parametros usamos los valores que queremos darle.
 }
 nav {
@@ -45,10 +45,10 @@ header > div > h1{
 .footer {
     height: 230px;
     padding: 10px 10px 0 10px;
-    background: linear-gradient(0deg, $celeste 0%, $amarillo 100%);
-    background: -webkit-linear-gradient(top 0deg, $celeste 0%, $amarillo 100%);
-    background: -o-linear-gradient(top 0deg, $celeste 0%, $amarillo 100%);
-    background: -moz-linear-gradient(top 0deg, $celeste 0%, $amarillo 100%);
+    background: linear-gradient(0deg, $celeste 0%, $blanco 100%);
+    background: -webkit-linear-gradient(top 0deg, $celeste 0%, $blanco 100%);
+    background: -o-linear-gradient(top 0deg, $celeste 0%, $blanco 100%);
+    background: -moz-linear-gradient(top 0deg, $celeste 0%, $blanco 100%);
     margin-bottom: 0px;
     color: rgb(37, 37, 37);
     letter-spacing:3px;
@@ -56,7 +56,7 @@ header > div > h1{
     bottom: 0;
     width: 100%;
     overflow:auto;
-    @include margenesYCol(10px, 0px, $blanco);
+    @include margenesYCol(10px, 0px, black);
 }
 
 footer a {
@@ -82,8 +82,7 @@ address{
     transition-duration: .3s;
     transition-timing-function: linear;
     transition-delay: .1s;
-    @include margenesYCol(10px, 0px, $blanco);
-    background-color: $rojo;
+    @include margenesYCol(10px, 0px, black);
 
 }
 .cartaHotel:hover{

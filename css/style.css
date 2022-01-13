@@ -1,21 +1,23 @@
 @charset "UTF-8";
 body {
-  background-color: #e0ee20; }
+  background-color: white;
+}
 
 .jumbotron {
   padding: 4px;
   height: 200px;
   background: rgba(17, 35, 224, 0.568);
-  background: linear-gradient(0deg, #e0ee20 0%, #106cfc 100%);
-  background: -o-linear-gradient(top 0deg, #e0ee20 0%, #106cfc 100%);
-  background: -webkit-linear-gradient(top 0deg, #e0ee20 0%, #106cfc 100%);
-  background: -moz-linear-gradient(top 0deg, #e0ee20 0%, #106cfc 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(white), to(#106cfc));
+  background: linear-gradient(0deg, white 0%, #106cfc 100%);
+  background: -moz-linear-gradient(top 0deg, white 0%, #106cfc 100%);
   margin-top: 50px;
   margin-bottom: 0px;
-  color: rgba(66, 189, 8, 0.897); }
+  color: black;
+}
 
 nav {
-  padding: 10px; }
+  padding: 10px;
+}
 
 header > div > h1 {
   margin-top: 50px;
@@ -23,15 +25,15 @@ header > div > h1 {
   margin-left: 50px;
   color: #106cfc;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black; }
+  -webkit-text-stroke-color: black;
+}
 
 .footer {
   height: 230px;
   padding: 10px 10px 0 10px;
-  background: linear-gradient(0deg, #106cfc 0%, #e0ee20 100%);
-  background: -webkit-linear-gradient(top 0deg, #106cfc 0%, #e0ee20 100%);
-  background: -o-linear-gradient(top 0deg, #106cfc 0%, #e0ee20 100%);
-  background: -moz-linear-gradient(top 0deg, #106cfc 0%, #e0ee20 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#106cfc), to(white));
+  background: linear-gradient(0deg, #106cfc 0%, white 100%);
+  background: -moz-linear-gradient(top 0deg, #106cfc 0%, white 100%);
   margin-bottom: 0px;
   color: #252525;
   letter-spacing: 3px;
@@ -41,38 +43,52 @@ header > div > h1 {
   overflow: auto;
   margin-top: 10px;
   margin-bottom: 0px;
-  color: white; }
+  color: black;
+}
 
 footer a {
   color: black;
   display: block;
   margin-left: 2px;
   margin-top: 2px;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 address {
   margin-top: 2px;
   font-size: 90%;
-  font-family: 'Courier New', Courier, monospace; }
+  font-family: 'Courier New', Courier, monospace;
+}
 
 .cartaHotel {
   margin-top: 10px;
-  flex: 1 250px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 250px;
+          flex: 1 250px;
   /*Esto lo que hace es. El primer valor que ponemos es de cuanto queremos que se agrande o se achique el elemento (al ponerle 1 es como poner lo normal del elemento ,Si ponemos 2, crece el doble [No me funcionó]).Yenelsegundocuantodeancho*/
+  -webkit-transition-property: background-color, -webkit-box-shadow;
+  transition-property: background-color, -webkit-box-shadow;
   transition-property: background-color, box-shadow;
-  transition-duration: .3s;
-  transition-timing-function: linear;
-  transition-delay: .1s;
+  transition-property: background-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
   margin-top: 10px;
   margin-bottom: 0px;
-  color: white;
-  background-color: rgba(226, 24, 24, 0.877); }
+  color: black;
+}
 
 .cartaHotel:hover {
-  box-shadow: 1px 1px 20px #393a3ab0; }
+  -webkit-box-shadow: 1px 1px 20px #393a3ab0;
+          box-shadow: 1px 1px 20px #393a3ab0;
+}
 
 .cartaHotel:active {
-  background-color: #f8fc102f; }
+  background-color: #f8fc102f;
+}
 
 .reserva {
   width: 100%;
@@ -80,27 +96,36 @@ address {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
-  -o-border-radius: 0px; }
+  -o-border-radius: 0px;
+}
 
 footer > article {
   font-size: 80%;
-  text-align: right; }
+  text-align: right;
+}
 
 .tablita-art {
   text-align: left;
-  font-size: 90%; }
+  font-size: 90%;
+}
 
 .footer-iconos {
-  padding-right: 10px; }
+  padding-right: 10px;
+}
 
 .tab-content {
-  padding-top: 10px; }
+  padding-top: 10px;
+}
 
 [class*="oi-star"] {
-  color: #106cfc; }
+  color: #106cfc;
+}
 
 div > [class*="card-img-top"] {
-  height: 22vh; }
+  height: 22vh;
+}
 
 [class*="btn-outline-primary"] {
-  background-color: rgba(66, 189, 8, 0.897); }
+  background-color: rgba(66, 189, 8, 0.897);
+}
+/*# sourceMappingURL=style.css.map */
